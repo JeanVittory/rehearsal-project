@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { WelcomeMessage } from "../components/welcomeUserMessage/WelcomeMessage"
+import Button from "../components/genericButton/Button.astro";
+
+---
+
+<Layout title="Home">
+    <main>
+        <WelcomeMessage/>
+        <section class="flex gap-20 mt-20 justify-center">
+            <Button buttonTitle="Ver mis ensayos"/>
+            <Button buttonTitle="Agendar ensayo"/>
+        </section>
+    </main>
+</Layout>
